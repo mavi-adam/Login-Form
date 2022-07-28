@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background-image: url(img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body h1 {
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 2px 2px 5px black;
+}
+.wrapper {
+  width: 320px;
+  height: 550px;
+  background: rgba(31, 29, 43, 0.9);
+  border-radius: 10px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
+}
+.wrapper .title {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 10px 10px 0 0;
+  background: #00a3ff;
+}
+.wrapper form {
+  padding: 10px 30px 50px 30px;
+}
+
+.wrapper form .field,
+.login {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.wrapper form .field input,
+.login input {
+  height: 100%;
+  width: 100%;
+  padding-left: 35px;
+  border-radius: 10px;
+  outline: none;
+  color: #fff;
+  border: 1px solid lightgrey;
+  background: #393c49;
+  transition: all 0.5s;
+}
+
+.wrapper form .field input:hover {
+  border: 1px solid #00a3ff;
+  background: #575b6e;
+}
+.wrapper form .field input:focus {
+  border: 1px solid #00a3ff;
+  box-shadow: 0px 1px 10px rgba(19, 161, 255, 0.986);
+  background: #575b6e;
+}
+.wrapper form .field label {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+}
+.field i {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  color: #999;
+  font-size: 18px;
+}
+.field input:is(:focus, :valid) ~ i {
+  color: #00a3ff;
+}
+
+.field i.icon {
+  left: 10px;
+}
+.field i.showHidePw {
+  right: 0px;
+  cursor: pointer;
+  padding: 10px;
+}
+.wrapper form .field input {
+  font-size: 14px;
+}
+.wrapper form .login input {
+  background: #00a3ff;
+  padding-left: 0px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s;
+}
+.wrapper form .login input:hover {
+  box-shadow: 0px 1px 10px rgba(19, 161, 255, 0.986);
+  background: #3fb9ff;
+  color: #393c49;
+}
+.checkbox-text {
+  font-size: 14px;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* nesneleri sağa sola yaslamaya yarar*/
+  margin-top: 20px;
+}
+.wrapper form .pass-link{
+  font-size: 15px;
+  text-align: center;
+  padding-top: 20px;
+  color: #797979;
+}
+
+.uye-ol{
+  text-decoration: none;
+  color: #999;
+  font-size: 16px;
+  font-weight: 600;
+}
+.uye-ol:hover{
+  text-decoration: underline;
+  color: #00a3ff;
+}
+.wrapper form .checkbox-text a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #999;
+  transition: all 0.3s;
+}
+
+.wrapper form .checkbox-text a:hover {
+  text-decoration: underline;
+  color: #00a3ff;
+}
+
+.wrapper form .pass-link p {
+  font-size: 14px;
+  position: relative;
+  text-align: center;
+  top: 25px;
+}
+
+.sosyal {
+  margin-top: 40px;
+}
+.sosyal li {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background: #393c49;
+  border-radius: 15%;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.sosyal li:hover {
+  background: #00a3ff;
+  box-shadow: 0px 1px 15px rgb(0, 152, 253);
+}
+.sosyal li img {
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+}
